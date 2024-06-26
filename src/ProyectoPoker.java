@@ -1,6 +1,6 @@
 /**
  *
- * @author scrubmx
+ * @autor scrubmx
  */
 public class ProyectoPoker {
 
@@ -12,5 +12,5 @@ public class ProyectoPoker {
         menuPrincipal frame = new menuPrincipal();
         frame.setVisible(true);
     }
-    
+
 }
