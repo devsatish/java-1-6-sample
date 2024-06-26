@@ -379,7 +379,7 @@ private void buttonCalculateActionPerformed(java.awt.event.ActionEvent evt) {//G
                 count_player_two_wins++;
             }else if(best_hand_one.getHandRank() == best_hand_two.getHandRank()){
                  //System.out.println("Uno empata: " +best_hand_one.handToString()+ " contra: " +best_hand_two.handToString()+"\n");
-                                switch(tieBreaker(best_hand_one, best_hand_two)){
+                                                switch(tieBreaker(best_hand_one, best_hand_two)){
                     case 0: tie++; break;
                     case 1: count_player_one_wins++; break;
                     case 2: count_player_two_wins++; break;
@@ -558,6 +558,11 @@ private void buttonCalculateActionPerformed(java.awt.event.ActionEvent evt) {//G
     }
 }//GEN-LAST:event_buttonCalculateActionPerformed
 
+    /**
+     * Evaluates the rank of the given hand.
+     * 
+     * @param playerHand the hand to evaluate
+     */
     public void evaluateHand(Hand playerHand){
         if(playerHand.isPair()){
             switch(playerHand.whichKind()){
@@ -590,6 +595,13 @@ private void buttonCalculateActionPerformed(java.awt.event.ActionEvent evt) {//G
         }
     }
 
+    /**
+     * Breaks ties between two hands of the same rank.
+     * 
+     * @param handOne the first hand
+     * @param handTwo the second hand
+     * @return 0 if tie, 1 if handOne wins, 2 if handTwo wins
+     */
     public int tieBreaker(Hand handOne, Hand handTwo){
         switch(handOne.getHandRank()){
             case 0: return 0;
