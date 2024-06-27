@@ -1,4 +1,22 @@
 /**
+ * Represents a playing card with a rank and suit.
+ * 
+ * <p>This class provides methods to create a card from a rank and suit or from a string representation.
+ * It also includes methods to get the rank and suit of the card, and to convert the rank to a string.</p>
+ * 
+ * <p>Example usage:</p>
+ * {@snippet :
+ * Card card = new Card(0, 1); // Ace of Hearts
+ * System.out.println(card); // Outputs: Ah
+ * }
+ * 
+ * <p>Another example:</p>
+ * {@snippet :
+ * Card card = new Card("Ah"); // Ace of Hearts
+ * System.out.println(card.getRank()); // Outputs: 0
+ * System.out.println(card.getSuit()); // Outputs: 1
+ * }
+ * 
  * @author scrub
  */
 public class Card {
