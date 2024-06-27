@@ -9,8 +9,8 @@ public class ProyectoPoker {
      */
     public static void main(String[] args) {
         // code application logic here
-        menuPrincipal frame = new menuPrincipal();
+        var frame = new menuPrincipal();
         frame.setVisible(true);
     }
-    
+
 }
