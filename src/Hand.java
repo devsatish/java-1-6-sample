@@ -1,5 +1,15 @@
 /**
- * @author scrub
+ * This class represents a hand of cards in a card game.
+ * It extends the Deck class and provides various methods to manipulate and evaluate the hand.
+ * 
+ * <p>Example usage:</p>
+ * {@snippet :
+ * Hand hand = new Hand(new String[]{"AS", "KH", "QC", "JD", "10S"});
+ * System.out.println(hand.handToString());
+ * }
+ * 
+ * @version Java 17
+ * @since 1.0
  */
 import java.util.ArrayList;
 import java.util.Arrays;
